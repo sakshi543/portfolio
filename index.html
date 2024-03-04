@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sakshi Gawande - Web Developer</title>
+</head>
+<body>
+    <header>
+        <img id="developer-image" src="photo.jpg" alt="Developer Image" onmouseover="showDeveloperInfo()" onmouseout="hideDeveloperInfo()">
+        <h1>Sakshi Gawande </h1>
+        <p>Web Developer</p>
+    </header>
+    <h2 id="this" >Projects</h2>
+    <section id="projects">
+        
+        <div class="project-card" onclick="openProjectModal('Project 1', 'Web application for checking weather forecasts. JavaScript, Node.js, and ReactJS were employed to create a user-friendly interface. Real-time data from an API provided accurate weather information, and an additional feature to auto-detect the location enhanced project versatility.','https://github.com/sakshi543/Weather-Forecast-Web-application')">
+            <h3>Project 1</h3>
+            <p>Weather Forecast App</p>
+        </div>
+        <div class="project-card" onclick="openProjectModal('Project 2', 'dynamic blogging website using PHP. The website incorporated features such as user login, signup, blog creation, post deletion/updating, and viewing posts by other users. This task enhanced proficiency in PHP and database management.','https://github.com/sakshi543/Blogging-website')">
+            <h3>Project 2</h3>
+            <p>Blogging Website</p>
+        </div>
+        <div class="project-card" onclick="openProjectModal('Project 3', 'Project to make your own burger with Custom ingredients amd display the bill.','https://github.com/sakshi543/burger-frontend')">
+            <h3>Project 3</h3>
+            <p>Custom order generator</p>
+        </div>
+        <div class="project-card" onclick="openProjectModal('Project 4', 'Ecommerse website front end Design','https://github.com/sakshi543/E-commerce_website')">
+            <h3>Project 4</h3>
+            <p>E commerse</p>
+        </div>
+        <div class="project-card" onclick="openProjectModal('Project 4', 'Generates random colors by clicking the button.', 'https://github.com/sakshi543/color-generator' )">
+            <h3>Project 4</h3>
+            <p>Random Color Generator</p>
+        </div>
+        <!-- Add more project cards as needed -->
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hey! 👋 I'm Sakshi, a third-year B.Tech Computer Engineering student diving into the exciting world of web development. 💻 Passionate about turning ideas into dynamic and visually stunning websites. 🚀 Let's create something awesome together! 🌐 #WebDevEnthusiast #FutureCoder</p>
+    </section>
+
+    <footer>
+        <p>Contact: <a href="mailto:saaksshi23@gmail.com"> saaksshi23@gmail.com</a></p>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProjectModal()">&times;</span>
+            <h2 id="project-title"></h2>
+            <p id="project-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
